@@ -101,3 +101,8 @@ MIT License
 ### 翻译进度提示
 
 ![翻译进度提示](docs/screenshots/progress.svg)
+
+
+## GitHub ????
+
+https://github.com/hezwl-1/smooth-web-translator
