@@ -36,5 +36,7 @@
                   "16":  "icons/icon16.png",
                   "48":  "icons/icon48.png",
                   "128":  "icons/icon128.png"
-              }
+              },
+    "homepage_url":  "https://github.com/hezwl-1/smooth-web-translator",
+    "author":  "hez"
 }
