@@ -88,17 +88,16 @@ icons/            插件图标
 MIT License
 
 
-## ????
+## 使用截图
 
-### ??????
+### 插件安装流程
 
-![??????](docs/screenshots/install.svg)
+![插件安装流程](docs/screenshots/install.svg)
 
-### ??????
+### 插件操作面板
 
-![??????](docs/screenshots/popup.svg)
+![插件操作面板](docs/screenshots/popup.svg)
 
-### ??????
+### 翻译进度提示
 
-![??????](docs/screenshots/progress.svg)
-
+![翻译进度提示](docs/screenshots/progress.svg)
