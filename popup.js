@@ -43,3 +43,12 @@ document.getElementById("restore").addEventListener("click", async () => {
   statusEl.textContent = "正在还原...";
   await runOnPage("restore");
 });
+
+const openSourceLink = document.getElementById('openSource');
+if (openSourceLink) {
+  openSourceLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    chrome.tabs.create({ url: 'https://github.com/hezwl-1/smooth-web-translator' });
+  });
+}
+
