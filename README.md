@@ -81,8 +81,9 @@ icons/            插件图标
 
 - 作者：hez
 - 开发方式：hez 使用 GPT-5.5 开发
-- GitHub：发布后可填写你的仓库地址
+- GitHub：https://github.com/2868401/smooth-web-translator
 
 ## License
 
 MIT License
+
