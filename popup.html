@@ -1,0 +1,54 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body { width: 285px; margin: 0; padding: 14px; font-family: Arial, "Microsoft YaHei", sans-serif; background: #f7f7f8; color: #111; }
+    h1 { font-size: 17px; margin: 0 0 12px; }
+    .row { display:flex; align-items:center; justify-content:space-between; gap:10px; background:white; border:1px solid #e5e7eb; border-radius:12px; padding:10px; margin-bottom:10px; }
+    .label { font-size:14px; font-weight:600; }
+    .tip { font-size:12px; color:#666; margin-top:3px; }
+    select { width: 100%; padding: 9px; border-radius: 8px; border: 1px solid #ddd; background:white; margin-bottom:8px; }
+    button { width: 100%; border: 0; border-radius: 10px; padding: 10px 12px; margin-top: 8px; font-size: 14px; cursor: pointer; }
+    .primary { background: #2563eb; color: white; }
+    .secondary { background: #e5e7eb; color: #111; }
+    #status { font-size: 12px; margin-top: 10px; color: #555; line-height: 1.5; }
+    .switch { position: relative; display: inline-block; width: 46px; height: 26px; flex:0 0 auto; }
+    .switch input { opacity: 0; width: 0; height: 0; }
+    .slider { position: absolute; cursor: pointer; inset:0; background:#cbd5e1; transition:.2s; border-radius:999px; }
+    .slider:before { position:absolute; content:""; height:20px; width:20px; left:3px; bottom:3px; background:white; transition:.2s; border-radius:50%; box-shadow:0 1px 3px rgba(0,0,0,.25); }
+    input:checked + .slider { background:#2563eb; }
+    input:checked + .slider:before { transform: translateX(20px); }
+  </style>
+</head>
+<body>
+  <h1>实时网页翻译</h1>
+
+  <div class="row">
+    <div>
+      <div class="label">自动翻译</div>
+      <div class="tip">打开页面后自动翻译</div>
+    </div>
+    <label class="switch">
+      <input type="checkbox" id="auto">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <select id="lang">
+    <option value="zh-CN">翻译成中文</option>
+    <option value="en">翻译成英文</option>
+    <option value="ja">翻译成日文</option>
+    <option value="ko">翻译成韩文</option>
+    <option value="de">翻译成德文</option>
+    <option value="fr">翻译成法文</option>
+    <option value="es">翻译成西班牙文</option>
+    <option value="ru">翻译成俄文</option>
+  </select>
+
+  <button class="primary" id="translate">立即翻译当前页</button>
+  <button class="secondary" id="restore">还原当前页</button>
+  <div id="status">自动翻译开启后，每个页面会自动处理。</div>
+  <script src="popup.js"></script>
+</body>
+</html>

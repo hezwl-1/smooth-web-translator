@@ -1,0 +1,40 @@
+﻿{
+    "manifest_version":  3,
+    "name":  "Smooth Web Translator - 网页实时自动翻译助手",
+    "version":  "2.4.0",
+    "description":  "由 hez 使用 GPT-5.5 开发的浏览器实时网页翻译插件，支持自动翻译、进度条、弹窗菜单补翻和低卡顿模式。",
+    "permissions":  [
+                        "activeTab",
+                        "scripting",
+                        "storage",
+                        "tabs"
+                    ],
+    "host_permissions":  [
+                             "\u003call_urls\u003e",
+                             "https://translate.googleapis.com/*"
+                         ],
+    "action":  {
+                   "default_title":  "实时网页翻译",
+                   "default_popup":  "popup.html"
+               },
+    "background":  {
+                       "service_worker":  "background.js"
+                   },
+    "content_scripts":  [
+                            {
+                                "matches":  [
+                                                "\u003call_urls\u003e"
+                                            ],
+                                "js":  [
+                                           "content.js"
+                                       ],
+                                "run_at":  "document_idle",
+                                "all_frames":  true
+                            }
+                        ],
+    "icons":  {
+                  "16":  "icons/icon16.png",
+                  "48":  "icons/icon48.png",
+                  "128":  "icons/icon128.png"
+              }
+}
