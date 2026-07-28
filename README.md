@@ -103,6 +103,6 @@ MIT License
 ![翻译进度提示](docs/screenshots/progress.svg)
 
 
-## GitHub ????
+## GitHub 开源地址
 
 https://github.com/hezwl-1/smooth-web-translator
