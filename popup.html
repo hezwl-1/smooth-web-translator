@@ -12,7 +12,7 @@
     button { width: 100%; border: 0; border-radius: 10px; padding: 10px 12px; margin-top: 8px; font-size: 14px; cursor: pointer; }
     .primary { background: #2563eb; color: white; }
     .secondary { background: #e5e7eb; color: #111; }
-    #status { font-size: 12px; margin-top: 10px; color: #555; line-height: 1.5; }
+    #status { font-size: 12px; margin-top: 10px; color: #555; line-height: 1.5; } .meta { margin-top: 12px; padding-top: 10px; border-top: 1px solid #e5e7eb; font-size: 12px; color: #666; text-align:center; } .meta a { color:#2563eb; text-decoration:none; font-weight:700; }
     .switch { position: relative; display: inline-block; width: 46px; height: 26px; flex:0 0 auto; }
     .switch input { opacity: 0; width: 0; height: 0; }
     .slider { position: absolute; cursor: pointer; inset:0; background:#cbd5e1; transition:.2s; border-radius:999px; }
@@ -48,7 +48,8 @@
 
   <button class="primary" id="translate">立即翻译当前页</button>
   <button class="secondary" id="restore">还原当前页</button>
-  <div id="status">自动翻译开启后，每个页面会自动处理。</div>
+  <div id="status">自动翻译开启后，每个页面会自动处理。</div>`n  <div class="meta">作者：hez<br><a id="openSource" href="https://github.com/hezwl-1/smooth-web-translator" target="_blank">GitHub 开源地址</a></div>
   <script src="popup.js"></script>
 </body>
 </html>
+
